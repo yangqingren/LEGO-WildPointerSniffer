@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LEGO-WildPointerSniffer_Example' do
+  pod 'LEGO-WildPointerSniffer', :path => '../'
+
+  target 'LEGO-WildPointerSniffer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

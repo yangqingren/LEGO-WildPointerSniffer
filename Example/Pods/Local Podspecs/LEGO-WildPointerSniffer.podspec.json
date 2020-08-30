@@ -1,0 +1,23 @@
+{
+  "name": "LEGO-WildPointerSniffer",
+  "version": "0.1.0",
+  "summary": "A short description of LEGO-WildPointerSniffer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yangqingren/LEGO-WildPointerSniffer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "564008993@qq.com": "yangqingren@yy.com"
+  },
+  "source": {
+    "git": "https://github.com/yangqingren/LEGO-WildPointerSniffer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LEGO-WildPointerSniffer/Classes/**/*",
+  "requires_arc": false
+}

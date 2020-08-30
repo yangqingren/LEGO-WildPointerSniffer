@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10AD1658074B211AF09903A4B3DF0B5F /* LEGO-WildPointerSniffer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5A3C76E358F78740FDF1673AF699C8 /* LEGO-WildPointerSniffer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		117F40CD55870044C779CB1C6734E14D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		120105553C6E5BEA3AC00093EAC802A7 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BAFB47DA84C5844A37F29439A3E9FC /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AAF16F6D6E1A698E7C13115619C3777 /* LEGOForwardProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA74D8077E0A48F87730CF687A5EC1 /* LEGOForwardProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		21A9EF16D5DCEF4A5FAB5B0688C8DF73 /* Pods-LEGO-WildPointerSniffer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC66267993210B208FFA9FF57F099214 /* Pods-LEGO-WildPointerSniffer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C7D77011B5E40496D76E3FAF12ED4 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5C6B3128CF18AE2BA305F98955BDE /* fishhook.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50DE2671EF8EA3C575EB6DEB9D3B659B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5EF145BBD347FDC4D5808EBD22FD7413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6139C0248B07FCAAF7DEB3E20AA2E206 /* LEGOForwardProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 731A6AEEF5E1F7DF09AC55E547579A31 /* LEGOForwardProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B87F1831E60B02ECE9850A5146C754 /* LEGOWildPointerSnifferOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB544535D7D824F1906BF4748B6764F /* LEGOWildPointerSnifferOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C23E24BF4654ECDA3C1DF2F003D9F3C /* Pods-LEGO-WildPointerSniffer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C13BB6BCF27C6872726F2E6EC9B6FA11 /* Pods-LEGO-WildPointerSniffer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8997884362F47CEC5540D1ECE75A8A97 /* LEGOWildPointerSnifferC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E91B6B090A12EC4597708F898B205 /* LEGOWildPointerSnifferC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93E72BB917789472CE7C33110F5FBB43 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4E9648CDA8ED67DEB94FE1758AD76E /* fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A45CF4C0AA99298AE433518ED5C2BE3F /* LEGOWildPointerSnifferC.h in Headers */ = {isa = PBXBuildFile; fileRef = EB721929C70C40E56BCE4094A0C12140 /* LEGOWildPointerSnifferC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6BA116AAA059ECC284A3AFE95067646 /* Pods-LEGO-WildPointerSniffer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705417B84D920199EFA81287F3E08820 /* Pods-LEGO-WildPointerSniffer_Example-dummy.m */; };
+		C84FAFC7CAF855F63751404A963C4C60 /* Pods-LEGO-WildPointerSniffer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC6C728644AFB75F353759E790F8A2 /* Pods-LEGO-WildPointerSniffer_Tests-dummy.m */; };
+		D5FFA8AC3E2C9BF6E8129D9641CC9277 /* LEGO-WildPointerSniffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F48112E304ABC968318C4306B5D90 /* LEGO-WildPointerSniffer-dummy.m */; };
+		DCA093F965040A49C17E21F752A77AD9 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = B6142E80733A03D7169D35157FADF25C /* queue.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E985FA517BF1FA2FBE61A7049721B64F /* LEGOWildPointerSnifferOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 198E39E32C183100CFC81216D4DC03E6 /* LEGOWildPointerSnifferOC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		865C4572B40AFB9C675B0E7EEA464A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F1EA7284C90555632F66315E6FC7F0;
+			remoteInfo = "LEGO-WildPointerSniffer";
+		};
+		89B9A1D4BF8F8EC1A24B8A3883862EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B836C134A238651F2672783767E9EC56;
+			remoteInfo = "Pods-LEGO-WildPointerSniffer_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038730CC2A0916ABA4066A3E04B3AEC3 /* Pods-LEGO-WildPointerSniffer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEGO-WildPointerSniffer_Example.modulemap"; sourceTree = "<group>"; };
+		03C8FF5E3B0C065F30203844BA9253F2 /* Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		05F1916132390EC9914BA3F8D0AC18B7 /* Pods_LEGO_WildPointerSniffer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEGO_WildPointerSniffer_Example.framework; path = "Pods-LEGO-WildPointerSniffer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		091EA53C6B1D9F5DAC1FE5575C4802E9 /* Pods-LEGO-WildPointerSniffer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEGO-WildPointerSniffer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		16CB226FC0BABD04BF681F8C5FD107C8 /* Pods-LEGO-WildPointerSniffer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGO-WildPointerSniffer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		198E39E32C183100CFC81216D4DC03E6 /* LEGOWildPointerSnifferOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEGOWildPointerSnifferOC.m; path = "LEGO-WildPointerSniffer/Classes/LEGOWildPointerSnifferOC.m"; sourceTree = "<group>"; };
+		20FEBB34C0D50C95E8CCBD5C5B7399F0 /* LEGO-WildPointerSniffer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LEGO-WildPointerSniffer-Info.plist"; sourceTree = "<group>"; };
+		2418E910C402D42B6CEB1C87B0D36302 /* LEGO-WildPointerSniffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LEGO-WildPointerSniffer.debug.xcconfig"; sourceTree = "<group>"; };
+		2A76F5C0A6BC5C4D977B2073FD08D85A /* Pods-LEGO-WildPointerSniffer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGO-WildPointerSniffer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F5A3C76E358F78740FDF1673AF699C8 /* LEGO-WildPointerSniffer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEGO-WildPointerSniffer-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AC0BF8AE418C6DC6E0CF5A68D2D926F /* Pods_LEGO_WildPointerSniffer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEGO_WildPointerSniffer_Tests.framework; path = "Pods-LEGO-WildPointerSniffer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA470B8BBC6CC641CF8232061B5568B /* Pods-LEGO-WildPointerSniffer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEGO-WildPointerSniffer_Tests.modulemap"; sourceTree = "<group>"; };
+		491AA13A695E7730A36A4ACA057229C5 /* Pods-LEGO-WildPointerSniffer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGO-WildPointerSniffer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4AA5C6B3128CF18AE2BA305F98955BDE /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fishhook.c; path = "LEGO-WildPointerSniffer/Classes/fishhook.c"; sourceTree = "<group>"; };
+		4AB544535D7D824F1906BF4748B6764F /* LEGOWildPointerSnifferOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEGOWildPointerSnifferOC.h; path = "LEGO-WildPointerSniffer/Classes/LEGOWildPointerSnifferOC.h"; sourceTree = "<group>"; };
+		4F52E54C56C3349E22B6CC33BF058112 /* Pods-LEGO-WildPointerSniffer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGO-WildPointerSniffer_Example-Info.plist"; sourceTree = "<group>"; };
+		54A42F0DE64EE8DD406F71E08757D9A3 /* Pods-LEGO-WildPointerSniffer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGO-WildPointerSniffer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		55A065015E3988E07A2BBA3B31212EEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5D3F48112E304ABC968318C4306B5D90 /* LEGO-WildPointerSniffer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEGO-WildPointerSniffer-dummy.m"; sourceTree = "<group>"; };
+		625190619CFD9F79181304789F636DBA /* LEGO-WildPointerSniffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LEGO-WildPointerSniffer.release.xcconfig"; sourceTree = "<group>"; };
+		684EBC7291B0713106E8A37E411E3184 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		705417B84D920199EFA81287F3E08820 /* Pods-LEGO-WildPointerSniffer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEGO-WildPointerSniffer_Example-dummy.m"; sourceTree = "<group>"; };
+		731A6AEEF5E1F7DF09AC55E547579A31 /* LEGOForwardProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEGOForwardProxy.h; path = "LEGO-WildPointerSniffer/Classes/LEGOForwardProxy.h"; sourceTree = "<group>"; };
+		80BAFB47DA84C5844A37F29439A3E9FC /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = "LEGO-WildPointerSniffer/Classes/queue.h"; sourceTree = "<group>"; };
+		85E11038E784B4845B440C33C480A9D2 /* Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8EEA74D8077E0A48F87730CF687A5EC1 /* LEGOForwardProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEGOForwardProxy.m; path = "LEGO-WildPointerSniffer/Classes/LEGOForwardProxy.m"; sourceTree = "<group>"; };
+		8FE60B2ED27C1E9105BB11B8AC68AE82 /* LEGO-WildPointerSniffer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEGO-WildPointerSniffer-prefix.pch"; sourceTree = "<group>"; };
+		9C2E91B6B090A12EC4597708F898B205 /* LEGOWildPointerSnifferC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEGOWildPointerSnifferC.m; path = "LEGO-WildPointerSniffer/Classes/LEGOWildPointerSnifferC.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A42837FFBE32616C6642A8025BCE5062 /* Pods-LEGO-WildPointerSniffer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGO-WildPointerSniffer_Tests-Info.plist"; sourceTree = "<group>"; };
+		AAE325DB899E151A2B585D4C3FF5516C /* LEGO-WildPointerSniffer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "LEGO-WildPointerSniffer.modulemap"; sourceTree = "<group>"; };
+		AE651D937054B6A681E55742A8F395A3 /* LEGO-WildPointerSniffer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "LEGO-WildPointerSniffer.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6142E80733A03D7169D35157FADF25C /* queue.c */ = {isa = PBXFileReference; includeInIndex = 1; name = queue.c; path = "LEGO-WildPointerSniffer/Classes/queue.c"; sourceTree = "<group>"; };
+		C13BB6BCF27C6872726F2E6EC9B6FA11 /* Pods-LEGO-WildPointerSniffer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEGO-WildPointerSniffer_Example-umbrella.h"; sourceTree = "<group>"; };
+		C94DDE92EAD89AF94A3C402335F69C03 /* Pods-LEGO-WildPointerSniffer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEGO-WildPointerSniffer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2FC6C728644AFB75F353759E790F8A2 /* Pods-LEGO-WildPointerSniffer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEGO-WildPointerSniffer_Tests-dummy.m"; sourceTree = "<group>"; };
+		DC66267993210B208FFA9FF57F099214 /* Pods-LEGO-WildPointerSniffer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEGO-WildPointerSniffer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DD4E9648CDA8ED67DEB94FE1758AD76E /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = "LEGO-WildPointerSniffer/Classes/fishhook.h"; sourceTree = "<group>"; };
+		EB721929C70C40E56BCE4094A0C12140 /* LEGOWildPointerSnifferC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEGOWildPointerSnifferC.h; path = "LEGO-WildPointerSniffer/Classes/LEGOWildPointerSnifferC.h"; sourceTree = "<group>"; };
+		F8BA5D8DDAC3E02883E006A878015DBA /* Pods-LEGO-WildPointerSniffer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGO-WildPointerSniffer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD76A0983EB6BB2B07B5B2409ACA69D8 /* LEGO_WildPointerSniffer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEGO_WildPointerSniffer.framework; path = "LEGO-WildPointerSniffer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A228AD7B6BCBE90CE53BBA23F85D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF145BBD347FDC4D5808EBD22FD7413 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC782EB292DD42706B92C6D1C84F7A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117F40CD55870044C779CB1C6734E14D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50ED0D3038144F81FD4EC74791C9913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE2671EF8EA3C575EB6DEB9D3B659B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1701B637AE033323F31B7C99432FF988 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE325DB899E151A2B585D4C3FF5516C /* LEGO-WildPointerSniffer.modulemap */,
+				5D3F48112E304ABC968318C4306B5D90 /* LEGO-WildPointerSniffer-dummy.m */,
+				20FEBB34C0D50C95E8CCBD5C5B7399F0 /* LEGO-WildPointerSniffer-Info.plist */,
+				8FE60B2ED27C1E9105BB11B8AC68AE82 /* LEGO-WildPointerSniffer-prefix.pch */,
+				2F5A3C76E358F78740FDF1673AF699C8 /* LEGO-WildPointerSniffer-umbrella.h */,
+				2418E910C402D42B6CEB1C87B0D36302 /* LEGO-WildPointerSniffer.debug.xcconfig */,
+				625190619CFD9F79181304789F636DBA /* LEGO-WildPointerSniffer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LEGO-WildPointerSniffer";
+			sourceTree = "<group>";
+		};
+		239FEA6CA4B0FFA8EA9064310C247C36 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973414E2918A41A1EB48295782D1F379 /* LEGO-WildPointerSniffer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3812A25EBB61A5E3D6856D848E612BE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD76A0983EB6BB2B07B5B2409ACA69D8 /* LEGO_WildPointerSniffer.framework */,
+				05F1916132390EC9914BA3F8D0AC18B7 /* Pods_LEGO_WildPointerSniffer_Example.framework */,
+				3AC0BF8AE418C6DC6E0CF5A68D2D926F /* Pods_LEGO_WildPointerSniffer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A4FB3C13AD92751231D7A0AFA6792CE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AE651D937054B6A681E55742A8F395A3 /* LEGO-WildPointerSniffer.podspec */,
+				684EBC7291B0713106E8A37E411E3184 /* LICENSE */,
+				55A065015E3988E07A2BBA3B31212EEC /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		91C005C9772335B104E3314967CA3E28 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC42705617DF1B3D11699F909EC55D64 /* Pods-LEGO-WildPointerSniffer_Example */,
+				F9D133673D4247007218E321C586F661 /* Pods-LEGO-WildPointerSniffer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		973414E2918A41A1EB48295782D1F379 /* LEGO-WildPointerSniffer */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5C6B3128CF18AE2BA305F98955BDE /* fishhook.c */,
+				DD4E9648CDA8ED67DEB94FE1758AD76E /* fishhook.h */,
+				731A6AEEF5E1F7DF09AC55E547579A31 /* LEGOForwardProxy.h */,
+				8EEA74D8077E0A48F87730CF687A5EC1 /* LEGOForwardProxy.m */,
+				EB721929C70C40E56BCE4094A0C12140 /* LEGOWildPointerSnifferC.h */,
+				9C2E91B6B090A12EC4597708F898B205 /* LEGOWildPointerSnifferC.m */,
+				4AB544535D7D824F1906BF4748B6764F /* LEGOWildPointerSnifferOC.h */,
+				198E39E32C183100CFC81216D4DC03E6 /* LEGOWildPointerSnifferOC.m */,
+				B6142E80733A03D7169D35157FADF25C /* queue.c */,
+				80BAFB47DA84C5844A37F29439A3E9FC /* queue.h */,
+				4A4FB3C13AD92751231D7A0AFA6792CE /* Pod */,
+				1701B637AE033323F31B7C99432FF988 /* Support Files */,
+			);
+			name = "LEGO-WildPointerSniffer";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				239FEA6CA4B0FFA8EA9064310C247C36 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3812A25EBB61A5E3D6856D848E612BE1 /* Products */,
+				91C005C9772335B104E3314967CA3E28 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9D133673D4247007218E321C586F661 /* Pods-LEGO-WildPointerSniffer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3DA470B8BBC6CC641CF8232061B5568B /* Pods-LEGO-WildPointerSniffer_Tests.modulemap */,
+				85E11038E784B4845B440C33C480A9D2 /* Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.markdown */,
+				03C8FF5E3B0C065F30203844BA9253F2 /* Pods-LEGO-WildPointerSniffer_Tests-acknowledgements.plist */,
+				D2FC6C728644AFB75F353759E790F8A2 /* Pods-LEGO-WildPointerSniffer_Tests-dummy.m */,
+				A42837FFBE32616C6642A8025BCE5062 /* Pods-LEGO-WildPointerSniffer_Tests-Info.plist */,
+				DC66267993210B208FFA9FF57F099214 /* Pods-LEGO-WildPointerSniffer_Tests-umbrella.h */,
+				F8BA5D8DDAC3E02883E006A878015DBA /* Pods-LEGO-WildPointerSniffer_Tests.debug.xcconfig */,
+				491AA13A695E7730A36A4ACA057229C5 /* Pods-LEGO-WildPointerSniffer_Tests.release.xcconfig */,
+			);
+			name = "Pods-LEGO-WildPointerSniffer_Tests";
+			path = "Target Support Files/Pods-LEGO-WildPointerSniffer_Tests";
+			sourceTree = "<group>";
+		};
+		FC42705617DF1B3D11699F909EC55D64 /* Pods-LEGO-WildPointerSniffer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				038730CC2A0916ABA4066A3E04B3AEC3 /* Pods-LEGO-WildPointerSniffer_Example.modulemap */,
+				C94DDE92EAD89AF94A3C402335F69C03 /* Pods-LEGO-WildPointerSniffer_Example-acknowledgements.markdown */,
+				2A76F5C0A6BC5C4D977B2073FD08D85A /* Pods-LEGO-WildPointerSniffer_Example-acknowledgements.plist */,
+				705417B84D920199EFA81287F3E08820 /* Pods-LEGO-WildPointerSniffer_Example-dummy.m */,
+				091EA53C6B1D9F5DAC1FE5575C4802E9 /* Pods-LEGO-WildPointerSniffer_Example-frameworks.sh */,
+				4F52E54C56C3349E22B6CC33BF058112 /* Pods-LEGO-WildPointerSniffer_Example-Info.plist */,
+				C13BB6BCF27C6872726F2E6EC9B6FA11 /* Pods-LEGO-WildPointerSniffer_Example-umbrella.h */,
+				54A42F0DE64EE8DD406F71E08757D9A3 /* Pods-LEGO-WildPointerSniffer_Example.debug.xcconfig */,
+				16CB226FC0BABD04BF681F8C5FD107C8 /* Pods-LEGO-WildPointerSniffer_Example.release.xcconfig */,
+			);
+			name = "Pods-LEGO-WildPointerSniffer_Example";
+			path = "Target Support Files/Pods-LEGO-WildPointerSniffer_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DE2B0B172DA0D41B3FD0CB62D631252 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C23E24BF4654ECDA3C1DF2F003D9F3C /* Pods-LEGO-WildPointerSniffer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6760F3246E0D2A0EAD026D5B4E64B218 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E72BB917789472CE7C33110F5FBB43 /* fishhook.h in Headers */,
+				10AD1658074B211AF09903A4B3DF0B5F /* LEGO-WildPointerSniffer-umbrella.h in Headers */,
+				6139C0248B07FCAAF7DEB3E20AA2E206 /* LEGOForwardProxy.h in Headers */,
+				A45CF4C0AA99298AE433518ED5C2BE3F /* LEGOWildPointerSnifferC.h in Headers */,
+				73B87F1831E60B02ECE9850A5146C754 /* LEGOWildPointerSnifferOC.h in Headers */,
+				120105553C6E5BEA3AC00093EAC802A7 /* queue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF68361D2C2D1552FFF061968602077 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A9EF16D5DCEF4A5FAB5B0688C8DF73 /* Pods-LEGO-WildPointerSniffer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BB93B99CDACD4137C967A2DCEEB4509 /* Pods-LEGO-WildPointerSniffer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E03C620141C37254BE1527CA2578611 /* Build configuration list for PBXNativeTarget "Pods-LEGO-WildPointerSniffer_Tests" */;
+			buildPhases = (
+				8EF68361D2C2D1552FFF061968602077 /* Headers */,
+				09FD528103508A43FAA129180C1838DA /* Sources */,
+				ACC782EB292DD42706B92C6D1C84F7A5 /* Frameworks */,
+				1DA685DCFB91C1CF9AB52EBF1D787161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71F8AE61DA067790CF07EB1976D5A2CF /* PBXTargetDependency */,
+			);
+			name = "Pods-LEGO-WildPointerSniffer_Tests";
+			productName = "Pods-LEGO-WildPointerSniffer_Tests";
+			productReference = 3AC0BF8AE418C6DC6E0CF5A68D2D926F /* Pods_LEGO_WildPointerSniffer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B836C134A238651F2672783767E9EC56 /* Pods-LEGO-WildPointerSniffer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9B284EE0CF59A69E6A9D578A1FD0AA /* Build configuration list for PBXNativeTarget "Pods-LEGO-WildPointerSniffer_Example" */;
+			buildPhases = (
+				0DE2B0B172DA0D41B3FD0CB62D631252 /* Headers */,
+				98F3FA06F622D1B8AACB76BA023B4570 /* Sources */,
+				96A228AD7B6BCBE90CE53BBA23F85D7E /* Frameworks */,
+				D34520015FADC69079750F7E7C37D44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38636EBF8B405A25AEE0E3993312C6AA /* PBXTargetDependency */,
+			);
+			name = "Pods-LEGO-WildPointerSniffer_Example";
+			productName = "Pods-LEGO-WildPointerSniffer_Example";
+			productReference = 05F1916132390EC9914BA3F8D0AC18B7 /* Pods_LEGO_WildPointerSniffer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5F1EA7284C90555632F66315E6FC7F0 /* LEGO-WildPointerSniffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54160AC8F31558CC54F1F3B58C455FF0 /* Build configuration list for PBXNativeTarget "LEGO-WildPointerSniffer" */;
+			buildPhases = (
+				6760F3246E0D2A0EAD026D5B4E64B218 /* Headers */,
+				B68EF6DF91F8E0A2FE3E933A316F77C4 /* Sources */,
+				C50ED0D3038144F81FD4EC74791C9913 /* Frameworks */,
+				F8BC72D56CAA0E5014AFDBB81C39D308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LEGO-WildPointerSniffer";
+			productName = "LEGO-WildPointerSniffer";
+			productReference = FD76A0983EB6BB2B07B5B2409ACA69D8 /* LEGO_WildPointerSniffer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3812A25EBB61A5E3D6856D848E612BE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5F1EA7284C90555632F66315E6FC7F0 /* LEGO-WildPointerSniffer */,
+				B836C134A238651F2672783767E9EC56 /* Pods-LEGO-WildPointerSniffer_Example */,
+				6BB93B99CDACD4137C967A2DCEEB4509 /* Pods-LEGO-WildPointerSniffer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DA685DCFB91C1CF9AB52EBF1D787161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34520015FADC69079750F7E7C37D44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BC72D56CAA0E5014AFDBB81C39D308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09FD528103508A43FAA129180C1838DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84FAFC7CAF855F63751404A963C4C60 /* Pods-LEGO-WildPointerSniffer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F3FA06F622D1B8AACB76BA023B4570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA116AAA059ECC284A3AFE95067646 /* Pods-LEGO-WildPointerSniffer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68EF6DF91F8E0A2FE3E933A316F77C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337C7D77011B5E40496D76E3FAF12ED4 /* fishhook.c in Sources */,
+				D5FFA8AC3E2C9BF6E8129D9641CC9277 /* LEGO-WildPointerSniffer-dummy.m in Sources */,
+				1AAF16F6D6E1A698E7C13115619C3777 /* LEGOForwardProxy.m in Sources */,
+				8997884362F47CEC5540D1ECE75A8A97 /* LEGOWildPointerSnifferC.m in Sources */,
+				E985FA517BF1FA2FBE61A7049721B64F /* LEGOWildPointerSnifferOC.m in Sources */,
+				DCA093F965040A49C17E21F752A77AD9 /* queue.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38636EBF8B405A25AEE0E3993312C6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LEGO-WildPointerSniffer";
+			target = F5F1EA7284C90555632F66315E6FC7F0 /* LEGO-WildPointerSniffer */;
+			targetProxy = 865C4572B40AFB9C675B0E7EEA464A19 /* PBXContainerItemProxy */;
+		};
+		71F8AE61DA067790CF07EB1976D5A2CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LEGO-WildPointerSniffer_Example";
+			target = B836C134A238651F2672783767E9EC56 /* Pods-LEGO-WildPointerSniffer_Example */;
+			targetProxy = 89B9A1D4BF8F8EC1A24B8A3883862EFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13DEDBE2DEA546D6B4D5851750D1D934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A42F0DE64EE8DD406F71E08757D9A3 /* Pods-LEGO-WildPointerSniffer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Example/Pods-LEGO-WildPointerSniffer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Example/Pods-LEGO-WildPointerSniffer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37A468ECF3135DF6387529146FC279FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CB226FC0BABD04BF681F8C5FD107C8 /* Pods-LEGO-WildPointerSniffer_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Example/Pods-LEGO-WildPointerSniffer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Example/Pods-LEGO-WildPointerSniffer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BA781B9C6DC32A5398762D6F319DAE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625190619CFD9F79181304789F636DBA /* LEGO-WildPointerSniffer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer.modulemap";
+				PRODUCT_MODULE_NAME = LEGO_WildPointerSniffer;
+				PRODUCT_NAME = LEGO_WildPointerSniffer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C88F9CAE6EAB98A94AE28A5A5A178947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2418E910C402D42B6CEB1C87B0D36302 /* LEGO-WildPointerSniffer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEGO-WildPointerSniffer/LEGO-WildPointerSniffer.modulemap";
+				PRODUCT_MODULE_NAME = LEGO_WildPointerSniffer;
+				PRODUCT_NAME = LEGO_WildPointerSniffer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F63621219FE1B075DA4B10C4CDF64458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491AA13A695E7730A36A4ACA057229C5 /* Pods-LEGO-WildPointerSniffer_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Tests/Pods-LEGO-WildPointerSniffer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Tests/Pods-LEGO-WildPointerSniffer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE3618BAC2725001EC5272CD492EBFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BA5D8DDAC3E02883E006A878015DBA /* Pods-LEGO-WildPointerSniffer_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Tests/Pods-LEGO-WildPointerSniffer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGO-WildPointerSniffer_Tests/Pods-LEGO-WildPointerSniffer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54160AC8F31558CC54F1F3B58C455FF0 /* Build configuration list for PBXNativeTarget "LEGO-WildPointerSniffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88F9CAE6EAB98A94AE28A5A5A178947 /* Debug */,
+				BA781B9C6DC32A5398762D6F319DAE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9B284EE0CF59A69E6A9D578A1FD0AA /* Build configuration list for PBXNativeTarget "Pods-LEGO-WildPointerSniffer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DEDBE2DEA546D6B4D5851750D1D934 /* Debug */,
+				37A468ECF3135DF6387529146FC279FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E03C620141C37254BE1527CA2578611 /* Build configuration list for PBXNativeTarget "Pods-LEGO-WildPointerSniffer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3618BAC2725001EC5272CD492EBFB1 /* Debug */,
+				F63621219FE1B075DA4B10C4CDF64458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

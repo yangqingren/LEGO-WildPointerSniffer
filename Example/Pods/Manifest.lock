@@ -1,0 +1,16 @@
+PODS:
+  - LEGO-WildPointerSniffer (0.1.0)
+
+DEPENDENCIES:
+  - LEGO-WildPointerSniffer (from `../`)
+
+EXTERNAL SOURCES:
+  LEGO-WildPointerSniffer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEGO-WildPointerSniffer: 02f4d8e7c6817ffd36604c30452fd818e236216b
+
+PODFILE CHECKSUM: a4faeb3271959c0f10ad347f6323a0086cbcc6a5
+
+COCOAPODS: 1.9.1

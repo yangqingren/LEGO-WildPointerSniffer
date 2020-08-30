@@ -1,0 +1,6 @@
+framework module LEGO_WildPointerSniffer {
+  umbrella header "LEGO-WildPointerSniffer-umbrella.h"
+
+  export *
+  module * { export * }
+}
